@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="🎬 Telugu Cinema, One Clip at a Time 🔥 Latest Movie Scenes, Song Clips, Trending Moments & Cinematic Edits. 🍿 New Releases • 🎵 Songs • ⚡ Viral Scenes • ❤️ TFI Vibes.">
+  <meta property="og:title" content="Navvora Telugu | Telugu Cinema, Movies & Reels">
+  <meta property="og:description" content="Telugu Cinema, One Clip at a Time.">
+  <meta property="og:image" content="assets/images/navvora-united-tfi.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Navvora Telugu | Telugu Cinema, Movies & Reels</title>
+  <link rel="icon" href="assets/images/navvora-united-tfi.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-orb"></div><div class="loader-word">NAVVORA</div>
+  </div>
+
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <div class="grain"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="topbar glass">
+    <a class="mini-brand" href="#home" aria-label="Navvora Telugu home">
+      <span class="mini-dot"></span> NAVVORA TELUGU
+    </a>
+    <button class="icon-btn" id="shareBtn" aria-label="Share Navvora">↗</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-reveal">
+      <div class="hero-backdrop"></div>
+      <div class="hero-image-wrap glass">
+        <img src="assets/images/navvora-united-tfi.jpg" alt="Navvora United TFI brand visual" class="hero-image"
+             onerror="this.style.display='none';this.parentElement.classList.add('image-placeholder')">
+        <div class="placeholder-content">
+          <span>NAVVORA</span><small>UNITED TFI</small>
+        </div>
+        <div class="light-sweep"></div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">UNITED TFI • DIGITAL ENTERTAINMENT</p>
+        <h1>NAVVORA <span>TELUGU</span></h1>
+        <p class="handle">@navvoratelugu</p>
+        <p class="tagline">🎬 Telugu Cinema, One Clip at a Time</p>
+        <p class="hero-desc">Latest Movie Scenes, Song Clips, Trending Moments & Cinematic Edits.</p>
+        <div class="hero-actions">
+          <a class="primary-btn magnetic" href="https://www.instagram.com/navvoratelugu/" target="_blank" rel="noopener">Follow on Instagram <span>↗</span></a>
+          <button class="secondary-btn magnetic" id="shareHero">Share Navvora</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="socials">
+      <div class="section-heading">
+        <p class="eyebrow">CONNECT</p><h2>Find Navvora <em>everywhere.</em></h2>
+      </div>
+      <div class="social-grid" id="socialGrid"></div>
+    </section>
+
+    <section class="section tfi-section">
+      <div class="section-heading">
+        <p class="eyebrow">UNITED TFI</p><h2>One Industry <em>• One Vision • One Force</em></h2>
+      </div>
+      <div class="gallery-grid" id="gallery"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">CINEMA SPOTLIGHT 🎬</p><h2>Stories worth <em>watching.</em></h2>
+      </div>
+      <div class="feature-grid" id="movies"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">TRENDING 🔥</p><h2>Trending on <em>Navvora.</em></h2>
+      </div>
+      <div class="feature-grid" id="trending"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">LATEST CONTENT</p><h2>Fresh from the <em>feed.</em></h2>
+      </div>
+      <div class="latest-grid" id="latest"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand">NAVVORA TELUGU</div>
+    <p>🎬 Telugu Cinema, One Clip at a Time</p>
+    <p>Mana Cinema • Mana Vibe • Mana Entertainment ❤️</p>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/navvoratelugu/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@navvora" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://t.me/navvoratelugu" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://www.facebook.com/navvoratelugu/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <small>© Navvora Telugu</small>
+  </footer>
+
+  <div class="share-modal" id="shareModal" aria-hidden="true">
+    <div class="modal-backdrop" id="closeShare"></div>
+    <div class="modal glass">
+      <button class="modal-close" id="closeShareBtn">×</button>
+      <p class="eyebrow">NAVVORA TELUGU</p><h3>Share Navvora</h3>
+      <p>Mana cinema vibe ni share cheyyandi ❤️</p>
+      <div class="share-actions">
+        <button id="nativeShare">↗ Share</button>
+        <button id="copyLink">⧉ Copy Link</button>
+        <a href="https://wa.me/?text=Navvora%20Telugu%20%E2%80%94%20Telugu%20Cinema%2C%20One%20Clip%20at%20a%20Time%20https%3A%2F%2Fnavvoratelugu.github.io%2F" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://t.me/share/url?url=https%3A%2F%2Fnavvoratelugu.github.io%2F&text=Navvora%20Telugu" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <button class="backtop" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
